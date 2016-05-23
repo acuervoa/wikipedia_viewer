@@ -18,10 +18,10 @@ $(document).ready(function(){
 	var printResults = function(results){
 		$("#results").append("<ul class='list'>");
 		$.each(results.query.pages, function(key, value){
-			$(".list").append("<li>").append("<div class='individualResult" + key + "'>");
-			$(".individualResult" + key).append("<h1>" + value.title + "</h1>");
-			$(".individualResult" + key).append("<p>" + value.extract + "</p>");
-			$(".individualResult" + key).append("<a href='http://es.wikipedia.org/?curid=" + value.pageid + "' target='_blank'>see more</a>");
+			$(".list").append("<li>").append("<div class='individualResult' id='result" + value.pageid + "'>");
+			$("#result" + key).append("<h1>" + value.title + "</h1>");
+			$("#result" + key).append("<p>" + value.extract + "</p>");
+			$("#result" + key).append("<a href='http://es.wikipedia.org/?curid=" + value.pageid + "' target='_blank'>see more</a>");
 			$(".list").append("</div>").append("</li>");
 		});
 		$("#results").append("</ul>");

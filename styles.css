@@ -3,6 +3,23 @@ body {
 	
 }
 
-#results{
-	color: white;
+#results {}
+
+
+.list {
+	
 }
+
+.individualResult {
+	background: white;
+	padding:10px;
+}
+
+.individualResult h1 {
+	font-size: 1.5em;
+	margin:10px;
+}
+
+.individualResult p {}
+
+.individualResult a {}
