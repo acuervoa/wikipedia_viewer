@@ -24,7 +24,9 @@ $(document).ready(function(){
 			console.log(value.extract);
 			console.log(value.pageid);
 			$(".list").append("<li>").append("<div class='individualResult" + key + "'>");
-			$(".individualResult" + key).append(value.title);
+			$(".individualResult" + key).append("<h1>" + value.title + "</h1>");
+			$(".individualResult" + key).append("<p>" + value.extract + "</p>");
+			$(".individualResult" + key).append("<a href='" + value.pageid + "' target='_blank'>see more</a>");
 			$(".list").append("</div>").append("</li>");
 		});
 		$("#results").append("</ul>");
