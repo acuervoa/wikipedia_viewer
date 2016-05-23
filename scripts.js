@@ -16,17 +16,12 @@ $(document).ready(function(){
 	};
 
 	var printResults = function(results){
-
-		console.log(results)
 		$("#results").append("<ul class='list'>");
 		$.each(results.query.pages, function(key, value){
-			console.log(value.title);
-			console.log(value.extract);
-			console.log(value.pageid);
 			$(".list").append("<li>").append("<div class='individualResult" + key + "'>");
 			$(".individualResult" + key).append("<h1>" + value.title + "</h1>");
 			$(".individualResult" + key).append("<p>" + value.extract + "</p>");
-			$(".individualResult" + key).append("<a href='" + value.pageid + "' target='_blank'>see more</a>");
+			$(".individualResult" + key).append("<a href='http://es.wikipedia.org/?curid=" + value.pageid + "' target='_blank'>see more</a>");
 			$(".list").append("</div>").append("</li>");
 		});
 		$("#results").append("</ul>");
