@@ -1,25 +1,30 @@
 body {
-	background: #092B40;
-	
+    background: #092B40;
+    font-family: 'Josefin Slab', serif;
 }
 
-#results {}
-
-
-.list {
-	
+#results {
+    clear: both;
 }
+
+.list {}
 
 .individualResult {
-	background: white;
-	padding:10px;
+    background: white;
+    padding: 10px;
 }
 
 .individualResult h1 {
-	font-size: 1.5em;
-	margin:10px;
+    font-size: 1.5em;
+    margin: 10px;
 }
 
-.individualResult p {}
+.individualResult p {
+    margin: 20px;
+    text-align: justify;
+}
 
-.individualResult a {}
+.individualResult a {
+    color: black;
+    margin: 20px;
+}

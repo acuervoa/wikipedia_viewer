@@ -1,37 +1,32 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <title>Wikipedia viewer</title>
+<html lang="en">
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>   
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipedia viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+</head>
 
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>  
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-   <link href="styles.css" rel="stylesheet"/>
-   <script src="scripts.js"></script>
-
- </head>
 <body>
-
-	<div class="container-fluid">
-
-		<div id="formSearch">
-			<form class="form-horizontal" method="post" action="#">
-			<div class="form-group col-xs-2">
-				<label for="searchBox">Search :</label>
-				<input type="text" id="searchBox" placeholder="search Text" class="form-control"/>
-				<input type="submit" id="btnSubmit" class="btn btn-default" value="Search"/>
-				<a href="https://es.wikipedia.org/wiki/Especial:Aleatoria" class="btn btn-default" id="btnRandom" target="_blank">Random</a>
-				</div>
-	 		</form>
- 		</div>
-
- 		<div id="results">
- 		</div>
-	</div>
-	
+    <div class="container-fluid">
+        <div id="formSearch">
+            <form class="form-horizontal" method="post" action="#">
+                <div class="form-group col-xs-2">
+                    <label for="searchBox">Search :</label>
+                    <input type="text" id="searchBox" placeholder="search Text" class="form-control" />
+                    <input type="submit" id="btnSubmit" class="btn btn-default" value="Search" />
+                    <a href="https://es.wikipedia.org/wiki/Especial:Aleatoria" class="btn btn-default" id="btnRandom" target="_blank">Random</a>
+                </div>
+            </form>
+        </div>
+        <div id="results">
+        </div>
+    </div>
 </body>
+
 </html>
