@@ -11,6 +11,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "scripts.js",
+			"settings":
+			{
+				"buffer_size": 1213,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -70,6 +78,7 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/kuerbo/workspace/freecodecamp/wikipedia_viewer"
 	],
 	"file_history":
 	[
@@ -140,8 +149,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scripts.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

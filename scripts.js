@@ -16,22 +16,31 @@ $(document).ready(function(){
 	};
 
 	var printResults = function(results){
+
+		$('#results').hide();
 		$("#results").append("<ul class='list'>");
-		$.each(results.query.pages, function(key, value){
-			$(".list").append("<li>").append("<div class='individualResult' id='result" + value.pageid + "'>");
-			$("#result" + key).append("<h1>" + value.title + "</h1>");
-			$("#result" + key).append("<p>" + value.extract + "</p>");
-			$("#result" + key).append("<a href='http://es.wikipedia.org/?curid=" + value.pageid + "' target='_blank'>see more</a>");
-			$(".list").append("</div>").append("</li>");
-		});
+		if (typeof results.query !== 'undefined') {
+			$.each(results.query.pages, function(key, value){
+				$(".list").append("<li>").append("<div class='individualResult' id='result" + value.pageid + "'>");
+				$("#result" + key).append("<h1>" + value.title + "</h1>");
+				$("#result" + key).append("<p>" + value.extract + "</p>");
+				$("#result" + key).append("<a href='http://es.wikipedia.org/?curid=" + value.pageid + "' target='_blank'>see more</a>");
+				$(".list").append("</div>").append("</li>");
+			});
+		} else {
+			$(".list").append("<li>").append("<div class='individualResult'>Results not found. Try again!</div>");
+		}
 		$("#results").append("</ul>");
+
+		$('#results').fadeIn();
 	};
 
 
 	$('#btnSubmit').on('click', function(e){
 		e.preventDefault();
-		
+		$('#results').html('');
 		sendQuery($('#searchBox').val());
+
 	});
 
 });

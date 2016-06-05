@@ -1,9 +1,13 @@
+
+
 body {
 	background: #092B40;
-	
+	font-family: 'Josefin Slab', serif;
 }
 
-#results {}
+#results {
+	clear: both;
+}
 
 
 .list {
@@ -20,6 +24,12 @@ body {
 	margin:10px;
 }
 
-.individualResult p {}
+.individualResult p {
+	margin: 20px;
+	text-align: justify;
+}
 
-.individualResult a {}
+.individualResult a {
+	color:black;
+	margin:20px;
+}
