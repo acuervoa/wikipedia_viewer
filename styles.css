@@ -8,20 +8,16 @@ body {
 #results {
 	clear: both;
 }
-
-
-.list {
-	
-}
+.list {}
 
 .individualResult {
-	background: white;
-	padding:10px;
+    background: white;
+    padding: 10px;
 }
 
 .individualResult h1 {
-	font-size: 1.5em;
-	margin:10px;
+    font-size: 1.5em;
+    margin: 10px;
 }
 
 .individualResult p {
@@ -33,3 +29,4 @@ body {
 	color:black;
 	margin:20px;
 }
+
